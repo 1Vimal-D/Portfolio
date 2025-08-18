@@ -2,95 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vimal D | Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vimal Dhandapani — Core Resume</title>
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+    :root{
+      --bg:#0f172a; /* slate-900 */
+      --card:#111827; /* gray-900 */
+      --muted:#94a3b8; /* slate-400 */
+      --text:#e5e7eb; /* gray-200 */
+      --accent:#38bdf8; /* sky-400 */
+      --pill:#1f2937; /* gray-800 */
+      --ring:#334155; /* slate-700 */
     }
-    header {
-      background-color: #222;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h1, h2 {
-      margin: 0.5rem 0;
-    }
-    .project {
-      background-color: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #eee;
-    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";background:linear-gradient(180deg,var(--bg),#0b1224);color:var(--text);}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1050px;margin:0 auto;padding:24px}
+    header{display:grid;gap:8px;align-items:center;margin-bottom:22px}
+    header h1{font-size:clamp(28px,4vw,40px);margin:0}
+    header p{margin:0;color:var(--muted)}
+    .contact{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .pill{background:var(--pill);padding:8px 12px;border-radius:999px;border:1px solid var(--ring)}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.grid{grid-template-columns:1.2fr 1fr}}
+    section{background:linear-gradient(180deg,var(--card),#0c152d);border:1px solid var(--ring);border-radius:16px;padding:18px 18px}
+    h2{margin:0 0 12px 0;font-size:20px;letter-spacing:.3px}
+    h3{margin:12px 0 6px;font-size:16px}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .row{display:flex;gap:8px;justify-content:space-between;align-items:baseline}
+    .muted{color:var(--muted)}
+    .taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .tag{background:#0a1327;border:1px solid var(--ring);padding:4px 10px;border-radius:999px;color:#cbd5e1;font-size:12px}
+    .two-col{display:grid;gap:16px}
+    @media(min-width:700px){.two-col{grid-template-columns:1fr 1fr}}
+    footer{color:var(--muted);text-align:center;margin:26px 0}
+    .small{font-size:13px}
+    .divider{height:1px;background:var(--ring);margin:10px 0 0}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Vimal D</h1>
-    <p>Aspiring Software Engineer | Passionate about building impactful solutions</p>
-  </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Aspiring Software Engineer with a strong foundation in Java, Python, Object-Oriented Programming, and problem-solving. Eager to contribute to real-world software development projects and grow in a dynamic tech-driven environment.</p>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>ToDo CLI App</h3>
-        <p>A command-line task manager built in Python. Add, mark, remove and view tasks efficiently right from your terminal.</p>
-        <a href="https://github.com/1Vimal-D/todo-cli-python">GitHub Repo</a>
+  <div class="container">
+    <header>
+      <h1>Vimal Dhandapani</h1>
+      <p class="small">Mechanical Engineering Undergraduate • Core placements focus</p>
+      <div class="contact">
+        <!-- Replace with your actual details -->
+        <span class="pill"><a href="mailto:your.email@example.com">your.email@example.com</a></span>
+        <span class="pill">+91-XXXXXXXXXX</span>
+        <span class="pill"><a href="https://www.linkedin.com/in/your-link" target="_blank" rel="noreferrer">LinkedIn</a></span>
+        <span class="pill"><a href="https://1vimal-d.github.io/Portfolio/" target="_blank" rel="noreferrer">Portfolio</a></span>
+        <span class="pill">Coimbatore, Tamil Nadu</span>
       </div>
-      <div class="project">
-        <h3>Student Database Management System</h3>
-        <p>A Python-based CLI tool to manage student records—add, view, update, and delete data using a clean menu-driven interface with file handling or SQLite integration.</p>
-        <a href="https://github.com/1Vimal-D/student-record-manager">GitHub Repo</a>
-      </div>
-    </section>
+    </header>
 
     <section>
-      <h2>Resume</h2>
-      <p><a href="./Resume.pdf" download>Click here to view/download my resume</a></p>
+      <h2>Career Objective</h2>
+      <p class="small">To secure a challenging role in the core mechanical sector where I can leverage my technical expertise, problem‑solving ability, and leadership experience to contribute to organizational goals while continuously advancing my skills.</p>
     </section>
 
-    <section>
-      <h2>Connect with Me</h2>
-      <p>
-        <a href="https://github.com/1Vimal-D" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/vimal-dhandapani-b03040230" target="_blank">LinkedIn</a>
-      </p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Vimal D. All rights reserved.</p>
-  </footer>
+    <div class="grid" style="margin-top:16px">
+      <section>
+        <h2>Projects</h2>
+        <div>
+          <h3>Vehicle Detection &amp; Indication Module</h3>
+          <div class="muted small">Alerts drivers in low‑visibility/blind‑spot conditions.</div>
+          <ul>
+            <li>Built real‑time detection using ultrasonic sensors, Arduino, and LEDs.</li>
+            <li>Focused on reliability and quick response for safety.</li>
+          </ul>
+          <div class="taglist"><span class="tag">Arduino UNO</span><span class="tag">Ultrasonic</span><span class="tag">LED</span><span class="tag">Embedded C</span></div>
+        </div>
+        <div class="divider"></div>
+        <div>
+          <h3>Ultrasonic Blind Stick</h3>
+          <div class="muted small">Assistive device for visually impaired navigation.</div>
+          <ul>
+            <li>Integrated ultrasonic obstacle detection with buzzer alerts.</li>
+            <li>Designed for low cost and ease of use.</li>
+          </ul>
+          <div class="taglist"><span class="tag">Arduino UNO</span><span class="tag">Ultrasonic</span><span class="tag">Buzzer</span><span class="tag">Embedded C</span></div>
+        </div>
+        <div class="divider"></div>
+        <div>
+          <h3>Automated Irrigation System</h3>
+          <div class="muted small">Water‑efficient irrigation using sensors and control.</div>
+          <ul>
+            <li>Monitors soil moisture to automate pump control and reduce wastage.</li>
+            <li>Improved consistency and reduced manual intervention.</li>
+          </ul>
+          <div class="taglist"><span class="tag">Soil Moisture Sensor</span><span class="tag">Relay</span><span class="tag">Water Pump</span></div>
+        </div>
+        <div class="divider"></div>
+        <div class="small muted">Additional: Automated Cattle Feeder — timer‑based motorized feed dispensing.</div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="row"><h3>KPRIET, Coimbatore</h3><span class="muted small">B.E. Mechanical • 2026</span></div>
+        <div class="small">CGPA: <strong>7.3/10</strong></div>
+        <div class="divider"></div>
+        <div class="row"><h3>Sri Chaithanya Techno School, Coimbatore</h3><span class="muted small">Class XII</span></div>
+        <div class="small">Percentage: <strong>73.8%</strong></div>
+      </section>
+    </div>
+
+    <div class="two-col" style="margin-top:16px">
+      <section>
+        <h2>Internships</h2>
+        <h3>VR Pumps — Pump Manufacturing</h3>
+        <ul>
+          <li>Observed end‑to‑end pump manufacturing, assembly and testing workflows.</li>
+          <li>Exposure to QA practices and shop‑floor safety.</li>
+        </ul>
+        <div class="divider"></div>
+        <h3>Alfa Tech — Manufacturing</h3>
+        <ul>
+          <li>Hands‑on learning in machining, tolerances, and production planning.</li>
+          <li>Understood maintenance and process optimization basics.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Workshops &amp; Training</h2>
+        <ul>
+          <li><strong>Fusion Workshop</strong> integrated with <strong>Ekki Pumps</strong> — 1 day industry program on pump systems.</li>
+          <li><strong>Autodesk Fusion 360 Workshop</strong> under <strong>Naan Mudhalvan</strong> — CAD design & simulation.</li>
+          <li><strong>GD&amp;T Upskilling Course</strong> — geometric dimensioning & tolerancing fundamentals.</li>
+          <li><strong>L&amp;T EduTech</strong> — Industrial Pipeline Engineering course.</li>
+          <li><strong>Bosch Certification</strong> — Electrical systems in cars, HVAC & sensors.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="two-col" style="margin-top:16px">
+      <section>
+        <h2>Technical Skills</h2>
+        <ul>
+          <li><strong>Design &amp; CAD:</strong> AutoCAD, SolidWorks, CATIA, Fusion 360</li>
+          <li><strong>Analysis:</strong> ANSYS (basics), MATLAB (basics)</li>
+          <li><strong>Programming/Embedded:</strong> C, Embedded C, Arduino; basics of Java &amp; Python</li>
+          <li><strong>Core Areas:</strong> CNC, GD&amp;T, HVAC, Industrial Pipeline Engineering</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Achievements</h2>
+        <ul>
+          <li><strong>3rd Place</strong> — Hackathon (Ultrasonic Blind Stick).</li>
+          <li><strong>1st Place</strong> — Paper Presentation (Waste Heat Management).</li>
+          <li><strong>2nd Place</strong> — Poster Design (SDG theme).</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="two-col" style="margin-top:16px">
+      <section>
+        <h2>Positions of Responsibility</h2>
+        <ul>
+          <li><strong>Secretary</strong> — Ignitrron (Technical Clubhouse), KPRIET</li>
+          <li><strong>Treasurer</strong> — Mechanical Engineering Association (2024–2025)</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Languages &amp; Soft Skills</h2>
+        <ul>
+          <li><strong>Languages:</strong> Tamil (Native), English (Professional), Hindi (Limited)</li>
+          <li><strong>Soft Skills:</strong> Leadership, Communication, Problem‑solving, Time Management</li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p class="small">© <span id="y"></span> Vimal Dhandapani</p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
